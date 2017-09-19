@@ -1,0 +1,303 @@
+
+/*** reset **/
+
+input,button,select,textarea{
+outline:none
+}
+
+body div,p,label,ul,li,input,button{
+  margin: 0;
+}
+
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.menu{
+  display: flex;
+}
+
+.header_logo{
+  margin: 30px 60px 30px 30px;
+  width: 150px;
+  height: 150px;
+}
+
+.middle_left{
+  display: none;
+}
+
+.header_menu{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  width: 80%;
+}
+
+.header_menu li{
+  text-align: center;
+}
+
+.header_menu li i{
+  font-size: 35px;
+}
+
+.header_menu p{
+    color: green;
+}
+
+.content_focus{
+  width: 90%;
+  height: 300px;
+  background-image: url(../resources/foodsense.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  flex-direction: column;
+}
+
+.content_focus_share{
+  background-color: white;
+  font-size: 23px;
+  width: 200px;
+  margin-top: 150px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.content_focus_news{
+  background: black;
+  color: white;
+  font-size: 18px;
+  width: 430px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.content_focus_photo{
+  width: 180px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 4px;
+  margin-top: 15px;
+}
+
+.content-footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #D9FFFF;
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+}
+
+.content-footer .highlight{
+  background-color: #BBFFFF;
+}
+
+.content-footer li{
+  line-height: 30px;
+  height: 30px;
+  width: 25%;
+  border-right: 1px solid #e8e6e6;
+}
+
+.search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  height: 40px;
+  border-top:1px dashed #000;
+  border-bottom:1px dashed #000;
+  border-color: #e4e2e2;
+  width: 100%;
+}
+
+.search p{
+  font-size: 30px;
+}
+
+.search label{
+  width: 500px;
+  height: 40px;
+}
+
+.search input{
+  height: 24px;
+  border: 1px solid gray;
+}
+
+.search button{
+  height: 30px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.articles{
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px;
+}
+
+.articles h3{
+  color: green;
+}
+
+.articles li p{
+  width: 220px;
+}
+
+.articles li label{
+  color: gray;
+  font-family: fantasy;
+  font-size: 15px;
+}
+
+.articles li a{
+  color: green;
+  font-size: 16px;
+  border-bottom: 1px dashed #000;
+  border-color: lightgray;
+}
+
+.split-hr{
+  height:1px;
+  border:none;
+  border-top:1px solid #E0E0E0;
+  width: 100%;
+}
+
+.pagefoot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagefoot-left{
+  flex-grow: row;
+  flex-direction: row;
+  color: green;
+}
+
+.pagefoot ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  padding: 0px;
+}
+
+.pagefoot label{
+  font-size: 13px;
+  color: lightgray;
+}
+
+.footer_right{
+  list-style: none;
+  color: darkgray;
+}
+
+
+@media screen and (max-width: 800px) {
+  .articles {
+    flex-direction: column;
+  }
+
+  .menu {
+    display: inline;
+  }
+
+  .middle_left{
+    display: list-item;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .middle_left hr{
+    border:0.1px dashed #000;
+    width:190px;
+    color:gray;
+  }
+
+  .middle_left_content{
+    width:190px;
+    border: 1px solid gray;
+    border-radius:4px;
+    line-height: 40px;
+    margin: 0px;
+    padding: 0px;
+    background-color:white;
+    border-color:lightgray;
+    color: 	#008B8B;
+  }
+
+  .header_section{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header_logo{
+    width: 80px;
+    height: 80px;
+    margin: 15px 30px 15px 30px;
+  }
+
+  .header_menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    margin: 0px;
+    width: 60px;
+    text-align: center;
+    float: left;
+  }
+
+  .header_menu li{
+    margin:10px;
+  }
+
+  .header_menu i{
+    margin:20px;
+  }
+
+  .SNS_Info{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content_focus {
+    margin-top: 15px;
+  }
+
+  .content-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+  }
+}
