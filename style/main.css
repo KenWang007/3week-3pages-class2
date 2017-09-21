@@ -62,11 +62,14 @@ body {
   flex-direction: column;
 }
 
+.content_focus p:first-child{
+    margin-top: 12%;
+  }
+
 .content_focus_share{
   background-color: white;
   font-size: 23px;
-  width: 200px;
-  margin-top: 150px;
+  margin-top: 12%;
   height: 35px;
   line-height: 35px;
   text-align: center;
@@ -81,6 +84,12 @@ body {
   line-height: 35px;
   text-align: center;
   vertical-align: middle;
+}
+
+.content_focus_photocontent{
+  text-align: right;
+  margin-right: 1rem;
+  margin-top: 1rem;
 }
 
 .content_focus_photo{
@@ -110,8 +119,9 @@ body {
 .content-footer li{
   line-height: 30px;
   height: 30px;
-  width: 25%;
   border-right: 1px solid #e8e6e6;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .search{
@@ -124,15 +134,15 @@ body {
   border-bottom:1px dashed #000;
   border-color: #e4e2e2;
   width: 100%;
+  flex-wrap: wrap;
 }
 
-.search p{
+.search p:first-child{
   font-size: 30px;
 }
 
-.search label{
-  width: 500px;
-  height: 40px;
+.search_content{
+  max-width: 60%;
 }
 
 .search input{
@@ -297,7 +307,7 @@ body {
   .articles {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content:flex-start;
   }
 }
